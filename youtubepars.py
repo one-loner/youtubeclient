@@ -9,7 +9,6 @@ for line in f:
     s1=line
     s1=s1.replace('<title>','')
     s1=s1.replace(' - Invidious</title>','')
-#    print(s1)
     s1=s1+'---------------------------------------------------------------------------------------------------------------'
     s1=s1+'\n'
     f1=open('results.txt','a')
@@ -22,7 +21,6 @@ for line in f:
     s2=s2.replace('<br></span></p>','')
     s2=s2+'---------------------------------------------------------------------------------------------------------------'
     s2=s2+'\n'
-#    print(s2)
     f1=open('results.txt','a')
     f1.write(s2)
     f1.close()
@@ -30,7 +28,6 @@ for line in f:
     s3=line
     s3=s3.replace('                <p dir="auto">','')
     s3=s3.replace('</p>','')
-#    print(s3)
     f1=open('results.txt','a')
     f1.write(s3)
     f1.close()
@@ -42,9 +39,6 @@ for line in f:
     f1=open('results.txt','a')
     f1.write(s4)
     f1.close()
-#    print(s4)
-#  r=r+'\n'+s1+'\n'+s2+'\n'+s3+'\n'+s4
-#print(r)
 f.close()
 f=open('results.txt','r')
 s=f.read()
@@ -53,6 +47,3 @@ f.close()
 f=open('results.txt','w')
 f.write(s)
 f.close()
-#f1=open('results.txt','a')
-#f1.write('==================================================================================')
-#f1.close()
