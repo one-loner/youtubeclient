@@ -19,6 +19,11 @@ for line in f:
     s2=s2.replace('        <p><span style="white-space:pre-wrap">','')
     s2=s2.replace('<br><br></span></p>','')
     s2=s2.replace('<br></span></p>','')
+    s2=s2.replace('<br>','')
+    s2=s2.replace('<a href="','')
+    s2=s2.replace('">','')
+    s2=s2.replace('</a>','')
+    s2=s2.replace('youtube',' youtube')
     s2=s2+'---------------------------------------------------------------------------------------------------------------'
     s2=s2+'\n'
     f1=open('results.txt','a')
