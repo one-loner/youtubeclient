@@ -21,4 +21,4 @@ rm ytpage.html
 python3 numbering.py
 xterm -e python3 player.py &
 less results.txt
-rm link.txt
+rm link.txt file.txt files.txt
