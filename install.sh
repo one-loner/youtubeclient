@@ -16,3 +16,4 @@ proxychains curl https://check.torproject.org
 echo "Если выдаётся длинный текст запроса, значит proxychains работает."
 echo "Теперь добавьте ссылки на интересные вам каналы в файл channels.txt, после чего для запуска программы введите: ./start.sh"
 chmod +x start.sh
+chmod +x youtubepars.sh 
