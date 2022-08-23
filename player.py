@@ -21,7 +21,14 @@ while j==1:
          f=open('link.txt')
          l=f.read()
          f.close()
-         os.system('proxychains youtube-dl '+l)
+         nv=input('Введите для скаченного файла или просто нажмите Enter, в таком случае имя у файла будет как у скаченного видео: ')
+         if nv=='':
+            os.system('proxychains youtube-dl '+l)
+         else:
+            nv=' -o '+nv+'.mp4'
+            l=l+nv
+            l=l.replace('\n','')
+            os.system('proxychains youtube-dl '+l)
          print('-----------------------------')
          print('Список скаченных видео:')
          os.system('ls | grep .mp4 > files.txt')
