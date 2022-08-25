@@ -25,6 +25,7 @@ while j==1:
          if nv=='':
             os.system('proxychains youtube-dl '+l)
          else:
+            nv=nv.replace(' ','_')
             nv=' -o '+nv+'.mp4'
             l=l+nv
             l=l.replace('\n','')
